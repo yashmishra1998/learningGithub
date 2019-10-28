@@ -1,0 +1,544 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My First CSS Website</title>
+        <style>
+		/*################# DEFAULTS ################*/
+nav, 
+header, 
+footer {
+    display: block;
+}
+
+body {
+    line-height: 1.1;
+    margin: 0;
+}
+
+label {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+p {
+    font-size: 28px;
+    line-height: 1;
+}
+
+article p {
+    font-size: 30px;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    margin: auto;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.row::after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+* {
+    box-sizing: border-box;
+}
+
+
+/*################## NAV BAR #################*/
+
+nav {
+    width: 100%;
+    margin: 0;
+}
+
+nav ul {
+    background-color: #eee;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+
+ul.topnav li {
+    list-style: none;
+    float: left;
+}
+
+ul.topnav li.topnav-right {
+    float: right;
+}
+
+ul.topnav li a {
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+
+ul.topnav li a:hover {
+    background-color: #0080ff;
+    color: #fff;
+}
+
+ul.topnav li.dropdownIcon {
+    display: none;
+}
+
+/*########## Custom Design #############*/
+
+#section-1-gradient {
+
+    background: #076dff;
+    background: -webkit-linear-gradient(#076dff,#65a5ff);
+    background: -o-linear-gradient(#076dff,#65a5ff);
+    background: -moz-linear-gradient(#076dff,#65a5ff);
+    background: linear-gradient(#076dff,#65a5ff);
+}
+
+div.box {
+    border-radius: 7px;
+    height: 400px;
+    text-align: center;
+    margin: 24px;
+    padding: 36px 24px 40px 24px;
+    background-color: #fff;
+    box-shadow: 0 0 0 2px rgba(0,100,255,0.5),
+        20px 20px 10px -5px rgba(0,0,255,0.5);
+}
+
+button {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 10px 40px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 7px;
+}
+
+Loginbutton {
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff;
+    background-color: #0069ff;
+    padding: 10px 40px;
+    display: block;
+    text-align: center;
+    margin: 20px auto;
+    border-radius: 7px;
+}
+
+div.imgHeading {
+    box-shadow: 0 0 4px 4px linear-gradient(royalblue,purple);
+    background-image: linear-gradient(royalblue,purple);
+    border-radius: 10px;
+    display: block;
+    color: white;
+    padding: 40px;
+    font-size: 28px;
+    font-family: serif
+}
+
+div.icon {
+    width: 100%;
+}
+
+.leftSide-col {
+    margin-left: 30%;
+}
+
+.rightSide-col {
+    margin-left: 10%;
+}
+
+h1.large {
+    color: #fff;
+    font-size: 56px;
+    margin: 0px;
+    line-height: 56px;
+}
+
+h1.section2Header {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 65px;
+    text-align: center;
+    text-shadow: 4px 4px 3px rgba(0,0,0,0.5);
+}
+
+h1.section2HeaderWhite {
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 52px;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 4px 4px 3px rgba(255,255,255,0.5);
+}
+
+form h2 {
+    color: white;
+}
+
+input[type="text"] {
+    font-size: 20px;
+    width: 400px;
+    min-width: 100px;
+    padding: 7px;
+    border-radius: 18px 7px;
+}
+
+.homeLoginbtn {
+    margin-left: 30%;
+    margin-top: 15px;
+    border-radius: 10px;
+    padding: 5px;
+    background-image: radial-gradient( dodgerblue, lightblue);
+    color: white;
+    border-color: white;
+}
+
+.yellowFlower,
+.pinkFlower {
+    width: 100%;
+    padding: 20px;
+}
+
+.gallery {
+    width: 100%;
+    padding: 15px;
+}
+
+footer.footsy {
+    padding-left: 10%;
+    background-color: #666;
+}
+
+footer.footsy h1 {
+    background: linear-gradient( white, white, royalblue, white, white);
+    font-size: 35px;
+    text-transform: uppercase;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+footer.footsy ul {
+    list-style: none;
+    text-align: left;
+    padding-left: 0px;
+}
+
+footer.footsy ul li {
+    color: #fff;
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/*############## Mobile ################*/
+
+@media screen and (max-width:360px) {
+    ul.topnav li:not(:nth-child(1)) {
+        display: none;
+    }
+    
+    ul.topnav li.dropdownIcon {
+        display: block;
+        float: right;
+    }
+    
+    ul.topnav.responsive li.dropdownIcon {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    
+    ul.topnav.responsive {
+        position: relative;
+    }
+    
+    ul.topnav.responsive li {
+        display: inline;
+        float: none;
+    }
+    
+    ul.topnav.responsive li a {
+        display: block;
+    }
+    
+    h1.section2Header {
+        font-size: 50px;
+    }
+    
+    .col-6,
+    .col-4,
+    .col-3 {
+        width: 100%;
+        margin: 0px;
+    }
+    
+    .footsy .row .col-3 {
+        width: 50%;
+    }
+    
+    div.box {
+        display: block;
+    }
+    
+    div.rightSide-col,
+    div.leftSide-col {
+        margin: 15px;
+    }
+    
+    input[type="text"] {
+        width: 350px;
+    }
+    
+    .videoContainer iframe {
+        position: relative;
+        width: 100%;
+        margin: 0;
+        overflow: hidden;
+    }
+    .box {
+        height: 450px;
+    }
+    
+    .homeLoginbtn {
+        margin-top: -5px;
+        margin-left: 15px;
+        margin-bottom: 15px;
+    }
+    
+    div.imgHeading {
+        font-size: 24px;
+        margin: 15px;
+    }
+    
+    .gallery {
+        padding: 15px;
+    }
+}
+	</style>
+    </head>
+    <body>
+        <nav >
+            <ul class="topnav" id="dropdownClick">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#aboutus">About Us</a></li>
+                <li><a href="#contacts">Contacts</a></li>
+                <li class="topnav-right"><a href="#signup">Sign Up</a></li>
+                <li class="topnav-right"><a href="#signin">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu();">&#9776;</a></li>
+            </ul>
+        </nav>
+        
+        
+        <div class="container" id="section-1-gradient">
+            <div class="row">
+                <div class="col-6">
+                    <div class="leftSide-col">
+                        <h1 class="large">Live Moments</h1>
+                        <h1 class="large">Live the Moments</h1>
+                    </div>
+                    <form>
+                        <div class="leftSide-col">
+                            <h2>Username</h2>
+                            <input class="inputbox" type="text" name="username" placeholder="Username">
+                            <h2>Password</h2>
+                            <input class="inputbox" type="text" name="password" placeholder="Password">
+                        </div>
+                    </form><br>
+                    
+                    <input class="homeLoginbtn" type="button" value="LOG IN" style="font-size: 24px; width: 150px; height: 40px;">
+                    
+                </div>
+                <div class="col-6">
+                    <div class="rightSide-col">
+                        <div class="videoContainer">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/Dv7cHLdvMIg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <header>
+            <h1 class="section2Header">Elements of Photography</h1>
+        </header>
+        
+        <div class="container">
+            <div class="row">
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="https://www.shareicon.net/data/256x256/2015/11/11/670398_tool_512x512.png" width="150px" height="150px">
+                        </div>
+                        <label>Aperture</label>
+                        <p>
+                            is the size of the opening of the lens through which light enters to expose the shot.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4"> 
+                    <div class="box">
+                        <div class="icon">
+                            <img src="https://cdn.iconscout.com/icon/free/png-256/shutter-speed-1782170-1512948.png" width="150px" height="150px">
+                        </div>
+                        <label>Shutter Speed</label>
+                        <p>
+                             is the amount of time that light is allowed to enter through the lens for exposure.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="box">
+                        <div class="icon">
+                            <img src="https://www.shareicon.net/data/256x256/2015/11/11/670214_camera_512x512.png" width="150px" height="150px">
+                        </div>
+                        <label>ISO</label>
+                        <p>
+                             is the amount of sensitivity toward the light entering into the lens.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <button onclick="window.location.href = 'https://www.youtube.com/channel/UCKIebaFbubF2L_ol3ujxoSA';">Learn More</button>
+                </div>
+            </div>
+        </div>
+        
+        <hr style="border-width: 2px;">
+        
+        <div style="background-image: linear-gradient(to right, white, dodgerblue, blue, dodgerblue, white);">
+        <h1 class="section2HeaderWhite">Gallery</h1>
+        </div>
+            
+        <div class="container">
+            <div class="row">
+                <div class="col-3">
+                    <img class = "yellowFlower" src="https://instagram.fdel1-4.fna.fbcdn.net/vp/4d8bceba5a40ef1d5610492f7f4afaf2/5E257014/t51.2885-15/e35/47581795_588854128213214_8270266635799314148_n.jpg?_nc_ht=instagram.fdel1-4.fna.fbcdn.net&_nc_cat=102">
+                </div>
+            <div class="col-6 imgHeading">
+                “To me, photography is an art of observation. It’s about finding something interesting in an ordinary place… I’ve found it has little to do with the things you see and everything to do with the way you see them.”<br>
+                <i style = "float: right">— Elliott Erwitt</i>
+                
+                <br><br>
+                
+                <div style="color: white;">Here are some of the shots taken by me. You can also check my Instagram Id <em><a href="" style="text-decoration: none; font-weight: 600; color: hotpink">yashmishra1998</a></em> for more images.</div>
+            </div>
+                <div class="col-3">
+                    <img class = "pinkFlower" src="https://instagram.fdel1-1.fna.fbcdn.net/vp/3d97ed0de934f05f90e0451b8f4d48bf/5E3378CF/t51.2885-15/e35/46969072_151639202472490_7638587594331587474_n.jpg?_nc_ht=instagram.fdel1-1.fna.fbcdn.net&_nc_cat=110">
+                </div>
+            </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-1.fna.fbcdn.net/vp/f9b27dbdbb96bd7f6ddc8997b6d388be/5E27D430/t51.2885-15/e35/59949488_128130358373434_4457443682536276056_n.jpg?_nc_ht=instagram.fdel1-1.fna.fbcdn.net&_nc_cat=110" ></div>
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-2.fna.fbcdn.net/vp/849de5b49d0b0d5accbe91c38b3fc186/5E2875AC/t51.2885-15/e35/63430828_375506986412035_1428584633937403268_n.jpg?_nc_ht=instagram.fdel1-2.fna.fbcdn.net&_nc_cat=107"></div>
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-2.fna.fbcdn.net/vp/5f66c61d0b6f8fe2d4dc78ed78bfc782/5E26821A/t51.2885-15/e35/47494420_288493155205276_1067936296248515907_n.jpg?_nc_ht=instagram.fdel1-2.fna.fbcdn.net&_nc_cat=104"></div>
+            </div>
+            <div class="row">
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-1.fna.fbcdn.net/vp/c1cd62f3fcecf62a66293fb21c80ccb2/5E433A09/t51.2885-15/e35/43475251_1229263070549889_2994906602737514858_n.jpg?_nc_ht=instagram.fdel1-1.fna.fbcdn.net&_nc_cat=109"></div>
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-3.fna.fbcdn.net/vp/e41f3519e1dc12f3d688ce1e1494d888/5E62A79A/t51.2885-15/e35/34443188_255548915009931_4483121296317612032_n.jpg?_nc_ht=instagram.fdel1-3.fna.fbcdn.net&_nc_cat=103"></div>
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-4.fna.fbcdn.net/vp/93357d845d8a5b0edb89e8aa33f70fa8/5E3FD290/t51.2885-15/e35/37508058_272788640119949_6150822200745132032_n.jpg?_nc_ht=instagram.fdel1-4.fna.fbcdn.net&_nc_cat=105"></div>
+            </div>
+                <div class="row">
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-4.fna.fbcdn.net/vp/9d01cba4921f1e042975d1b11e75cda8/5E60BE81/t51.2885-15/e35/38035129_433893417120216_916329777952980992_n.jpg?_nc_ht=instagram.fdel1-4.fna.fbcdn.net&_nc_cat=100"></div>
+                    <div class="col-4">
+                        <img class="gallery" src="https://s3.amazonaws.com/pixpa.com/com/articles/1514810332-anseladams2.jpg">
+                    </div>
+                    <div class="col-4">
+                        <img class="gallery" src="https://instagram.fdel1-1.fna.fbcdn.net/vp/3019f865f137a9e226679d2fdfd43017/5E3F315C/t51.2885-15/e35/41832088_333951437170054_6057679368507741637_n.jpg?_nc_ht=instagram.fdel1-1.fna.fbcdn.net&_nc_cat=110"></div>
+            </div>
+                </div>
+        
+        <footer class="footsy">
+            <div class="row">
+                <div class="col-3">
+                    <h1>Company</h1>
+                    <ul>
+                        <li>About</li>
+                        <li>Blog</li>
+                        <li>Careers</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h1>Products</h1>
+                    <ul>
+                        <li>Computers</li>
+                        <li>iPads</li>
+                        <li>iPhones</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h1>Learn More</h1>
+                    <ul>
+                        <li>Developers</li>
+                        <li>Designers</li>
+                        <li>Hackers</li>
+                    </ul>
+                </div>
+                <div class="col-3">
+                    <h1>Support</h1>
+                    <ul>
+                        <li>Help</li>
+                        <li>QnA</li>
+                        <li>Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        
+        <script>
+            function dropdownMenu() {
+                var x = document.getElementById("dropdownClick");
+                
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                }
+                
+                else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+        
+    </body>
+</html>
